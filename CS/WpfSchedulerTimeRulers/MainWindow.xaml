@@ -1,0 +1,31 @@
+﻿<dx:ThemedWindow x:Class="WpfSchedulerTimeRulers.MainWindow" mc:Ignorable="d" Title="Time Rulers" Height="500" Width="800" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:local="clr-namespace:WpfSchedulerTimeRulers"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    xmlns:dxsch="http://schemas.devexpress.com/winfx/2008/xaml/scheduling"
+    xmlns:dxschv="http://schemas.devexpress.com/winfx/2008/xaml/scheduling/visual"
+    DataContext="{dxmvvm:ViewModelSource local:MainViewModel}">
+    
+    <dx:ThemedWindow.Resources>
+        <DataTemplate x:Key="TimeRulerGeneratorTemplate">
+            <ContentControl>
+                <dxsch:TimeRuler Caption="{Binding Caption}" ShowMinutes="{Binding ShowMinutes}" TimeZone="{Binding TimeZone}" AlwaysShowTimeDesignator="{Binding AlwaysShowTimeDesignator}"/>
+            </ContentControl>
+        </DataTemplate>
+        
+        <Style TargetType="{x:Type dxschv:TimeRulerCellControl}">
+            <Setter Property="HourStringFormat" Value="{}{0:HH}"/>
+            <Setter Property="MinuteStringFormat" Value="{}{0:mm}"/>
+        </Style>
+    </dx:ThemedWindow.Resources>
+    
+    <Grid>
+        <dxsch:SchedulerControl x:Name="scheduler">
+            <dxsch:DayView x:Name="dayView" ShowWorkTimeOnly="True" TimeScale="00:30:00" TimeRulersSource="{Binding TimeRulers}" TimeRulerTemplate="{StaticResource TimeRulerGeneratorTemplate}"/>
+        </dxsch:SchedulerControl>
+    </Grid>
+</dx:ThemedWindow>
