@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainViewModel.cs](./CS/WpfSchedulerTimeRulers/MainViewModel.cs) (VB: [MainViewModel.vb](./VB/WpfSchedulerTimeRulers/MainViewModel.vb))
+* **[MainWindow.xaml](./CS/WpfSchedulerTimeRulers/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfSchedulerTimeRulers/MainWindow.xaml))**
+<!-- default file list end -->
 # How to add multiple time rulers to the Scheduler and adjust their settings
 
 
