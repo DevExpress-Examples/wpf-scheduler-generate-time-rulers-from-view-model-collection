@@ -1,24 +1,14 @@
-﻿Imports DevExpress.Xpf.Scheduling
-Imports System
+Imports DevExpress.Xpf.Scheduling
 
 Namespace WpfSchedulerTimeRulers
-    ''' <summary>
-    ''' Interaction logic for MainWindow.xaml
-    ''' </summary>
-    Partial Public Class MainWindow
+
+    Public Partial Class MainWindow
         Inherits DevExpress.Xpf.Core.ThemedWindow
 
         Public Sub New()
-            InitializeComponent()
-
+            Me.InitializeComponent()
             ' Create a test appointment.
-            scheduler.AppointmentItems.Add(New AppointmentItem() With { _
-                .Start = Date.Now.Date.AddHours(13), _
-                .End = Date.Now.Date.AddHours(14), _
-                .LabelId = 1, _
-                .StatusId = 2, _
-                .Subject = "Phone Call" _
-            })
+            Me.scheduler.AppointmentItems.Add(New AppointmentItem() With {.Start = Date.Now.Date.AddHours(13), .[End] = Date.Now.Date.AddHours(14), .LabelId = 1, .StatusId = 2, .Subject = "Phone Call"})
         End Sub
     End Class
 End Namespace
