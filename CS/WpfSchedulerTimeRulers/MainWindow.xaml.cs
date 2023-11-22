@@ -1,15 +1,9 @@
 ﻿using DevExpress.Xpf.Scheduling;
 using System;
 
-namespace WpfSchedulerTimeRulers
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : DevExpress.Xpf.Core.ThemedWindow
-    {
-        public MainWindow()
-        {
+namespace WpfSchedulerTimeRulers {
+    public partial class MainWindow : DevExpress.Xpf.Core.ThemedWindow {
+        public MainWindow() {
             InitializeComponent();
 
             // Create a test appointment.
