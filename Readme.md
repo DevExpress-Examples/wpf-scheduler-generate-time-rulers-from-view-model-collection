@@ -3,17 +3,27 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T587066)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
+# WPF Scheduler - Generate Time Rulers From a View Model Collection
+
+This example generates [time rulers](https://docs.devexpress.com/WPF/404183/controls-and-libraries/scheduler/visual-elements/time-ruler) from a collection. The [DayViewBase.TimeRulersSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DayViewBase.TimeRulersSource) property specifies the collection of objects that describe time ruler elements. The [DayViewBase.TimeRulerTemplate](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DayViewBase.TimeRulerTemplate) property allows you to define a data template used to generate time rulers. You can create a style for the [TimeRulerCellControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.Visual.TimeRulerCellControl) to customize generated time rulers.
+
+The [DayViewBase.TimeRulers](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DayViewBase.TimeRulers) collection stores all time rulers for the current view. You can also use collection members to add, modify, or remove time rulers.
+  
+![image](./media/90f75ab6-4202-4587-acb0-560f08d9bae2.png)
+
+## Files to Review
+
+* [MainWindow.xaml](./CS/WpfSchedulerTimeRulers/MainWindow.xaml)
 * [MainViewModel.cs](./CS/WpfSchedulerTimeRulers/MainViewModel.cs) (VB: [MainViewModel.vb](./VB/WpfSchedulerTimeRulers/MainViewModel.vb))
-* **[MainWindow.xaml](./CS/WpfSchedulerTimeRulers/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfSchedulerTimeRulers/MainWindow.xaml))**
-<!-- default file list end -->
-# How to add multiple time rulers to the Scheduler and adjust their settings
 
+## Documentation
 
-<p>This example demonstrates how to add multiple time rulers to the <a href="https://documentation.devexpress.com/WPF/119204/Controls-and-Libraries/Scheduler/Views/Day-View">Day View</a> using the MVVM architectural pattern. <br>The <a href="https://documentation.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DayViewBase.TimeRulersSource.property">DayViewBase.TimeRulersSource</a> property allows you to bind a scheduler view to a collection of objects containing time ruler settings described in the ViewModel. The <a href="https://documentation.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DayViewBase.TimeRulerTemplate.property">DayViewBase.TimeRulerTemplate</a> property specifies a data template based on which time rulers are generated.<br>Create a custom style for the <strong>TimeRulerCellControl </strong>to<strong> </strong>specify format strings for displaying time in the time rulers' time scale. <br>The <a href="https://documentation.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DayViewBase.TimeRulers.property">DayViewBase.TimeRulers</a> collection stores all time rulers for the current view. You can also use the collection's members to add, modify or remove time rulers.<br><img src="https://raw.githubusercontent.com/DevExpress-Examples/how-to-add-multiple-time-rulers-to-the-scheduler-and-adjust-their-settings-t587066/17.2.3+/media/90f75ab6-4202-4587-acb0-560f08d9bae2.png"></p>
+* [Time Ruler](https://docs.devexpress.com/WPF/404183/controls-and-libraries/scheduler/visual-elements/time-ruler)
+* [TimeRuler](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.TimeRuler)
+* [DayViewBase.TimeRulersSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DayViewBase.TimeRulersSource)
+* [DayViewBase.TimeRulerTemplate](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DayViewBase.TimeRulerTemplate)
 
-<br/>
+## More Examples
 
-
+* [WPF Scheduler - Use Styles and Templates to Customize Time Rulers](https://github.com/DevExpress-Examples/wpf-scheduler-use-styles-and-templates-to-customize-time-rulers)
