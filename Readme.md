@@ -10,7 +10,7 @@ This example generates [time rulers](https://docs.devexpress.com/WPF/404183/cont
 
 The [DayViewBase.TimeRulers](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DayViewBase.TimeRulers) collection stores all time rulers for the current view. You can also use collection members to add, modify, or remove time rulers.
   
-![image](./media/90f75ab6-4202-4587-acb0-560f08d9bae2.png)
+![image](./media/90f75ab6-4202-4587-acb0-560f08d9bae2.png) 
 
 ## Files to Review
 
